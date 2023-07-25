@@ -10,3 +10,14 @@ if (true) {
 }
 
 console.log("num: ", num) // 12
+
+// Zmienne utworzone z var nie mają zasięgu blokowego:
+
+var data = 15
+
+if(true) {
+    var data = 22
+    console.log(data) // 22
+}
+
+console.log(data) // 22
